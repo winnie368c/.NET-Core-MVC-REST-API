@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LmK1rGWaGOoYrldgqA2/bMMg63vo6P2VI39ztB2XA8yL4l+VcrTqfb9QhqrvGj58LYDzl59K+8c9hJCdga3rZw==",
+  "dgSpecHash": "jgY9D6ZtWr2Em/M6r3/yR5TGcQCZRD916H6/NFyUrNbH7LukskJT6+2GnhvCUL1Vzk2g0YLv6mVgu+F2nvkNXQ==",
   "success": true,
   "projectFilePath": "/Users/Winnie/Documents/command-api/Commander/Commander.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,8 @@
     "/Users/Winnie/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/Winnie/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/Users/Winnie/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/Winnie/.nuget/packages/swashbuckle.aspnetcore.annotations/6.2.3/swashbuckle.aspnetcore.annotations.6.2.3.nupkg.sha512",
+    "/Users/Winnie/.nuget/packages/swashbuckle.aspnetcore.newtonsoft/6.2.3/swashbuckle.aspnetcore.newtonsoft.6.2.3.nupkg.sha512",
     "/Users/Winnie/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/Winnie/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/Users/Winnie/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",

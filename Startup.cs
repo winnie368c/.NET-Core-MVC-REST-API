@@ -33,29 +33,37 @@ namespace Commander
         {
             services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer
                 (Configuration.GetConnectionString("CommanderConnection")));
-
+            
+            //for controllers and PATCH request
             services.AddControllers().AddNewtonsoftJson(s => {
                 s.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             });
             
+            //allows automapper to be added to project through dependency injection
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
 
-            //ADDED AFTER TUTORIAL
-            services.AddSwaggerGen(c=> {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Commander API", Version = "v1" });
+            //Adding swagger UI
+            services.AddMvc();
+            services.AddSwaggerGen(c =>
+            {
+                c.EnableAnnotations();
+                c.SwaggerDoc("v1", new OpenApiInfo 
+                { 
+                    Title = "Commands API", Version = "v1",
+                    Description = "An API that provides CLI commands"
+                });
             });
-
+            services.AddSwaggerGenNewtonsoftSupport();
         }
 
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //ADDED AFTER TUTORIAL
+            //adding Swagger
             app.UseSwagger();
-
-            //ADDED AFTER TUTORIAL
+            //SwaggerUI looks at json document to read documentation for API
             app.UseSwaggerUI( c=> {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Commander API V1");
             });

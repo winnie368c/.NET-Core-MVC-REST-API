@@ -70,3 +70,5 @@
 /Users/Winnie/Documents/command-api/Commander/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/Winnie/Documents/command-api/Commander/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/Winnie/Documents/command-api/Commander/obj/Debug/netcoreapp3.1/Commander.MvcApplicationPartsAssemblyInfo.cs
+/Users/Winnie/Documents/command-api/Commander/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Annotations.dll
+/Users/Winnie/Documents/command-api/Commander/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Newtonsoft.dll

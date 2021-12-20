@@ -5,7 +5,7 @@ using Commander.Dtos;
 using Commander.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace Commander.Controllers
 {
@@ -25,6 +25,7 @@ namespace Commander.Controllers
        
         //GET api/commands
         [HttpGet]
+        [SwaggerOperation(Summary = "Gets all commands.")]
         public ActionResult <IEnumerable<CommandReadDto>> GetAllCommmands()
         {
             var commandItems = _repository.GetAllCommands();
@@ -35,6 +36,7 @@ namespace Commander.Controllers
 
         //GET api/commands/{id}
         [HttpGet("{id}", Name="GetCommandById")]
+        [SwaggerOperation(Summary = "Gets a specific command by id number.")]
         public ActionResult <CommandReadDto> GetCommandById(int id)
         {
             var commandItem = _repository.GetCommandById(id);
@@ -47,6 +49,7 @@ namespace Commander.Controllers
 
         //POST api/commands
         [HttpPost]
+        [SwaggerOperation(Summary = "Creates a command with the three attributes 'howTo' (description of command), 'line' (the command), 'platform' (application platform).")]
         public ActionResult <CommandReadDto> CreateCommand(CommandCreateDto commandCreateDto)
         {
             //mapping commandCreateDto into command using automapper to put command model in database
@@ -62,6 +65,7 @@ namespace Commander.Controllers
 
         //PUT api/commands/{id}
         [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Replaces a specific command by id number with the new command.")]
         public ActionResult UpdateCommand(int id, CommandUpdateDto commandUpdateDto)
         {
             var commandModelFromRepo = _repository.GetCommandById(id);
@@ -80,6 +84,7 @@ namespace Commander.Controllers
 
         //PATCH api/commands/{id}
         [HttpPatch("{id}")]
+        [SwaggerOperation(Summary = "Partially updates a specific command by id number using the JSON 'replace' operation with the three attributes 'value' (new value), 'path' ('/line' or '/howTo'), and 'op' ('replace'). (Delete 'from'.)")]
         public ActionResult PartialCommandUpdate(int id, JsonPatchDocument<CommandUpdateDto> patchDoc)
         {
             var commandModelFromRepo = _repository.GetCommandById(id);
@@ -107,6 +112,7 @@ namespace Commander.Controllers
 
         //DELETE api/commands/{id}
         [HttpDelete("{id}")]
+         [SwaggerOperation(Summary = "Deletes a specific command by id number.")]
         public ActionResult DeleteCommand(int id)
         {
             var commandModelFromRepo = _repository.GetCommandById(id);
