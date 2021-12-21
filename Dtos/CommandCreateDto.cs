@@ -1,9 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Commander.Dtos
+namespace Commander.Dtos 
 {
     public class CommandCreateDto
     {
+        //data annotations 
         [Required]
         [MaxLength(250)]
         public string HowTo { get; set; }

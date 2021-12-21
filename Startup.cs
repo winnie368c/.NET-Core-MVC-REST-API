@@ -31,6 +31,7 @@ namespace Commander
 
         public void ConfigureServices(IServiceCollection services)
         {
+            //configuring db context class for app , adding to service container
             services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer
                 (Configuration.GetConnectionString("CommanderConnection")));
             
@@ -42,6 +43,8 @@ namespace Commander
             //allows automapper to be added to project through dependency injection
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+            //give SqlCommanderRepo whenever asks for ICommanderRepo
+            //change second param to change implementation
             services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
 
             //Adding swagger UI
@@ -67,13 +70,6 @@ namespace Commander
             app.UseSwaggerUI( c=> {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Commander API V1");
             });
-
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 

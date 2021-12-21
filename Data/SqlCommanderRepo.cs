@@ -7,13 +7,16 @@ namespace Commander.Data
 {
     public class SqlCommanderRepo : ICommanderRepo
     {
+        //instance of db context class
         private readonly CommanderContext _context;
 
+        //using dependency injection to populate context variable with db data
         public SqlCommanderRepo(CommanderContext context)
         {
             _context = context;
         }
 
+        //adding command object to _context db
         public void CreateCommand(Command cmd)
         {
             if(cmd == null)
@@ -33,6 +36,7 @@ namespace Commander.Data
             _context.Commands.Remove(cmd);
         }
 
+        //returning list of all commands from db
         public IEnumerable<Command> GetAllCommands()
         {
             return _context.Commands.ToList();
@@ -40,6 +44,7 @@ namespace Commander.Data
 
         public Command GetCommandById(int id)
         {
+            //returning first id that matches
             return _context.Commands.FirstOrDefault(p => p.Id == id);
         }
 
