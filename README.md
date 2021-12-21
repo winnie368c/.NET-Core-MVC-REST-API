@@ -17,13 +17,13 @@ This project was built to learn how to construct a REST API using .NET Core usin
 * Azure Data Studio
 
 ## Overview
-# Application Architecture:
+### Application Architecture:
 
-# API CRUD Endpoints:
+### API CRUD Endpoints:
 
-# Swagger UI:
+### Swagger UI:
 
-# Postman Endpoints:
+### Postman Endpoints:
 
 This project is based on a tutorial by Les Jackson. 
 
