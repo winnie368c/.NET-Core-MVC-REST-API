@@ -20,11 +20,14 @@ This project was built to learn how to construct a REST API using .NET Core usin
 ### Application Architecture:
 ![](images/Application%20Architecture.png)
 ### API CRUD Endpoints:
-
+![](images/API%20End%20points.png)
 ### Swagger UI:
-![](images/API%20Endpoints.png)
+![](images/SwaggerUI.png)
 ### Postman Endpoints:
+#### [HttpPatch] Updating the value of the /howTo attribute; returns "204 No Content" status code 
+![](images/Patch.png)
+#### [HttpPost] Creating a new command; returns location URI and "201 Created" status code
+![](images/Post.png)
 
-This project is based on a tutorial by Les Jackson. 
 
-
+<sub>This project is based on a tutorial by Les Jackson.</sub>
