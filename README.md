@@ -18,11 +18,11 @@ This project was built to learn how to construct a REST API using .NET Core usin
 
 ## Overview
 ### Application Architecture:
-![alttext](images/Application Architecture.png)
+![](images/Application%20Architecture.png)
 ### API CRUD Endpoints:
 
 ### Swagger UI:
-
+![](images/API%20Endpoints.png)
 ### Postman Endpoints:
 
 This project is based on a tutorial by Les Jackson. 
