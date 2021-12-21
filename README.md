@@ -18,7 +18,7 @@ This project was built to learn how to construct a REST API using .NET Core usin
 
 ## Overview
 ### Application Architecture:
-![Application Architecture](/images/Application Architecture.png)
+![alttext](images/Application Architecture.png)
 ### API CRUD Endpoints:
 
 ### Swagger UI:
