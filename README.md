@@ -18,7 +18,7 @@ This project was built to learn how to construct a REST API using .NET Core usin
 
 ## Overview
 ### Application Architecture:
-**This API contains a Model, an internal representation of the data, and a Controller, the component that handles incoming requests through Action methods, retrieves data, and returns responses.**
+**This API contains a Model, an internal representation of the data, and a Controller, the component that handles incoming requests, retrieves data, and returns responses through Action methods.**
 ![](images/Application%20Architecture.png)
 ### API CRUD Endpoints:
 **The functions that the application can perform.**
@@ -36,4 +36,4 @@ This project was built to learn how to construct a REST API using .NET Core usin
 
 
 
-<sub>This project is based on a tutorial by Les Jackson.</sub>
+<sub><sup>This project is based on a tutorial by Les Jackson.</sub></sup>
