@@ -26,7 +26,7 @@ This project was built to learn how to construct a REST API using .NET Core usin
 ### Swagger UI:
 **Generates interactive documentation to test API calls.**
 ![](images/SwaggerUI.png)
-**Example: [HttpDelete] Deletes the command, gotten by id; returns "204 No Content" status code**
+**Example: [HttpDelete] Deleting the command, gotten by id; returns "204 No Content" status code**
 ![](images/Swagger.png)
 ### Postman Endpoints:
 #### [HttpPatch] Updating the value of the /howTo attribute; returns "204 No Content" status code 
