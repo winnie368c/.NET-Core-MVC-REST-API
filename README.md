@@ -36,4 +36,4 @@ This project was built to learn how to construct a REST API using .NET Core usin
 
 
 
-<sub><sup>A special thank you to Les Jackson for the tutorial on which this project is based</sub></sup>
+<sub><sup>A special thank you to Les Jackson for the tutorial on which this project is based.</sub></sup>
