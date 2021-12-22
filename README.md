@@ -18,11 +18,16 @@ This project was built to learn how to construct a REST API using .NET Core usin
 
 ## Overview
 ### Application Architecture:
+**This API contains a Model, an internal representation of the data, and a Controller, the component that handles incoming requests through Action methods, retrieves data, and returns responses.**
 ![](images/Application%20Architecture.png)
 ### API CRUD Endpoints:
+**The functions that the application can perform.**
 ![](images/API%20End%20points.png)
 ### Swagger UI:
+**Generates interactive documentation to test API calls.**
 ![](images/SwaggerUI.png)
+**Example: [HttpDelete] Deletes the command, gotten by id; returns "204 No Content" status code**
+![](images/Swagger.png)
 ### Postman Endpoints:
 #### [HttpPatch] Updating the value of the /howTo attribute; returns "204 No Content" status code 
 ![](images/Patch.png)
